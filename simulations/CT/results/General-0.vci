@@ -1,0 +1,22 @@
+file 3115 1359050349                                            
+version 2
+run General-0-20130124-15:55:19-828
+attr configname General
+attr datetime 20130124-15:55:19
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network CT
+attr processid 828
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 29  CT.host[0].app  "End-to-end delay"  ETV
+vector 30  CT.host[0].app  "Mean end-to-end delay"  ETV
+29	482 1318 565 5089 8.234592 46.280672 39 0.002943472133 0.005437914624 0.161620174926 0.00068749795047846
+30	1800 1315 565 5089 8.234592 46.280672 39 0.003032075148 0.004394691649 0.159393932306 0.00065297668400235

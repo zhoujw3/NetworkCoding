@@ -1,0 +1,22 @@
+file 39435 1359041793                                           
+version 2
+run General-0-20130124-12:02:15-7172
+attr configname General
+attr datetime 20130124-12:02:15
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network ClusterTree
+attr processid 7172
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 18  ClusterTree.host[1].app  "End-to-end delay"  ETV
+vector 19  ClusterTree.host[1].app  "Mean end-to-end delay"  ETV
+18	511 19471 1183 179615 19.666272 1391.993312 522 0.002927615026 3.692752203795 929.470384351 2363.4610683382
+19	19982 19453 1183 179615 19.666272 1391.993312 522 0.126143472133 2.087722867479 922.95074533972 1637.9742415904

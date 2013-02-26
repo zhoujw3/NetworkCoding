@@ -1,0 +1,3 @@
+package networkcoding;
+
+@license(LGPL);

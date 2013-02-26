@@ -1,0 +1,843 @@
+version 2
+run General-0-20130124-12:02:15-7172
+attr configname General
+attr datetime 20130124-12:02:15
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network ClusterTree
+attr processid 7172
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar ClusterTree.host[0].app 	trafficSent 	264
+scalar ClusterTree.host[0].app 	"total bytes received" 	0
+scalar ClusterTree.host[0].net 	"num of pkts forwarded" 	260
+scalar ClusterTree.host[0].nic.ifq 	queueLength:max 	4
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar ClusterTree.host[0].nic.ifq 	queueLength:timeavg 	0.073393903087288
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+statistic ClusterTree.host[0].nic.ifq 	queueingTime:histogram
+field count 524
+field mean 0.19607117345988
+field stddev 0.63846305461104
+field sum 102.74129489298
+field sqrsum 233.33774896246
+field min 0
+field max 3.635711591412
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-1.5828010119185	0
+bin	-1.371760876996	0
+bin	-1.1607207420736	0
+bin	-0.9496806071511	0
+bin	-0.73864047222863	0
+bin	-0.52760033730617	0
+bin	-0.3165602023837	0
+bin	-0.10552006746123	459
+bin	0.10552006746123	6
+bin	0.3165602023837	6
+bin	0.52760033730617	6
+bin	0.73864047222863	7
+bin	0.9496806071511	5
+bin	1.1607207420736	4
+bin	1.371760876996	2
+bin	1.5828010119185	3
+bin	1.793841146841	2
+bin	2.0048812817634	5
+bin	2.2159214166859	2
+bin	2.4269615516084	3
+bin	2.6380016865308	2
+bin	2.8490418214533	6
+bin	3.0600819563758	2
+bin	3.2711220912982	0
+bin	3.4821622262207	4
+bin	3.6932023611432	0
+bin	3.9042424960656	0
+bin	4.1152826309881	0
+bin	4.3263227659106	0
+bin	4.537362900833	0
+bin	4.7484030357555	0
+scalar ClusterTree.host[0].nic.ifq 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar ClusterTree.host[0].nic.ifq 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar ClusterTree.host[0].nic.ifq 	rcvdPk:count 	524
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar ClusterTree.host[0].nic.ifq 	rcvdPk:sum(packetBytes) 	5240
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar ClusterTree.host[0].nic.mac 	"Total simulation time" 	1399.8614404086
+scalar ClusterTree.host[0].nic.mac 	"total num of upper pkts received" 	524
+scalar ClusterTree.host[0].nic.mac 	"num of upper pkts dropped" 	260
+scalar ClusterTree.host[0].nic.mac 	"num of BEACON pkts sent" 	356
+scalar ClusterTree.host[0].nic.mac 	"num of DATA pkts sent successfully" 	248
+scalar ClusterTree.host[0].nic.mac 	"num of DATA pkts failed" 	15
+scalar ClusterTree.host[0].nic.mac 	"num of DATA pkts sent successfully in GTS" 	0
+scalar ClusterTree.host[0].nic.mac 	"num of DATA pkts failed in GTS" 	0
+scalar ClusterTree.host[0].nic.mac 	"num of ACK pkts sent" 	260
+scalar ClusterTree.host[0].nic.mac 	"num of BEACON pkts received" 	357
+scalar ClusterTree.host[0].nic.mac 	"num of BEACON pkts lost" 	0
+scalar ClusterTree.host[0].nic.mac 	"num of DATA pkts received" 	260
+scalar ClusterTree.host[0].nic.mac 	"num of DATA pkts received in GTS" 	0
+scalar ClusterTree.host[0].nic.mac 	"num of ACK pkts received" 	248
+scalar ClusterTree.host[0].nic.mac 	"num of collisions" 	0
+scalar ClusterTree.host[0].nic.phy 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar ClusterTree.host[0].nic.phy 	lossRate:max 	0.02
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar ClusterTree.host[0].nic.phy 	lossRate:timeavg 	0.0014162096700775
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+scalar ClusterTree.host[0].nic.phy 	radioState:count 	9078
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+statistic ClusterTree.host[0].nic.phy 	channelNo:histogram
+field count 1
+field mean 11
+field stddev -1.#IND
+field sum 11
+field sqrsum 121
+field min 11
+field max 11
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	10	0
+bin	11	1
+bin	12	0
+scalar ClusterTree.host[0].nic.phy 	bitrate:min 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar ClusterTree.host[0].nic.phy 	bitrate:max 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar ClusterTree.host[0].nic.phy 	bitrate:timeavg 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar ClusterTree.host[1].app 	trafficSent 	0
+scalar ClusterTree.host[1].app 	"total bytes received" 	5220
+scalar ClusterTree.host[1].net 	"num of pkts forwarded" 	0
+scalar ClusterTree.host[1].nic.ifq 	queueLength:max 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar ClusterTree.host[1].nic.ifq 	queueLength:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+statistic ClusterTree.host[1].nic.ifq 	queueingTime:histogram
+field count 0
+field mean 0
+field stddev -1.#IND
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	-6.9388939039072e-018	0
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar ClusterTree.host[1].nic.ifq 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar ClusterTree.host[1].nic.ifq 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar ClusterTree.host[1].nic.ifq 	rcvdPk:count 	0
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar ClusterTree.host[1].nic.ifq 	rcvdPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar ClusterTree.host[1].nic.mac 	"Total simulation time" 	1399.8614404086
+scalar ClusterTree.host[1].nic.mac 	"total num of upper pkts received" 	0
+scalar ClusterTree.host[1].nic.mac 	"num of upper pkts dropped" 	0
+scalar ClusterTree.host[1].nic.mac 	"num of BEACON pkts sent" 	357
+scalar ClusterTree.host[1].nic.mac 	"num of DATA pkts sent successfully" 	0
+scalar ClusterTree.host[1].nic.mac 	"num of DATA pkts failed" 	0
+scalar ClusterTree.host[1].nic.mac 	"num of DATA pkts sent successfully in GTS" 	0
+scalar ClusterTree.host[1].nic.mac 	"num of DATA pkts failed in GTS" 	0
+scalar ClusterTree.host[1].nic.mac 	"num of ACK pkts sent" 	522
+scalar ClusterTree.host[1].nic.mac 	"num of BEACON pkts received" 	0
+scalar ClusterTree.host[1].nic.mac 	"num of BEACON pkts lost" 	0
+scalar ClusterTree.host[1].nic.mac 	"num of DATA pkts received" 	522
+scalar ClusterTree.host[1].nic.mac 	"num of DATA pkts received in GTS" 	0
+scalar ClusterTree.host[1].nic.mac 	"num of ACK pkts received" 	0
+scalar ClusterTree.host[1].nic.mac 	"num of collisions" 	132
+scalar ClusterTree.host[1].nic.phy 	lossRate:min 	0.08
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar ClusterTree.host[1].nic.phy 	lossRate:max 	0.32
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar ClusterTree.host[1].nic.phy 	lossRate:timeavg 	0.20498293683977
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+scalar ClusterTree.host[1].nic.phy 	radioState:count 	6687
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+statistic ClusterTree.host[1].nic.phy 	channelNo:histogram
+field count 1
+field mean 11
+field stddev -1.#IND
+field sum 11
+field sqrsum 121
+field min 11
+field max 11
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	10	0
+bin	11	1
+bin	12	0
+scalar ClusterTree.host[1].nic.phy 	bitrate:min 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar ClusterTree.host[1].nic.phy 	bitrate:max 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar ClusterTree.host[1].nic.phy 	bitrate:timeavg 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar ClusterTree.host[2].app 	trafficSent 	294
+scalar ClusterTree.host[2].app 	"total bytes received" 	0
+scalar ClusterTree.host[2].net 	"num of pkts forwarded" 	848
+scalar ClusterTree.host[2].nic.ifq 	queueLength:max 	7
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar ClusterTree.host[2].nic.ifq 	queueLength:timeavg 	0.28352438021626
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+statistic ClusterTree.host[2].nic.ifq 	queueingTime:histogram
+field count 1142
+field mean 0.34754364910726
+field stddev 0.94539159522939
+field sum 396.89484728049
+field sqrsum 1157.7244547007
+field min 0
+field max 3.49827116128
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-1.666735795706	0
+bin	-1.4445043562785	0
+bin	-1.2222729168511	0
+bin	-1.0000414774236	0
+bin	-0.77781003799613	0
+bin	-0.55557859856867	0
+bin	-0.3333471591412	0
+bin	-0.11111571971373	977
+bin	0.11111571971373	10
+bin	0.3333471591412	5
+bin	0.55557859856867	9
+bin	0.77781003799613	5
+bin	1.0000414774236	9
+bin	1.2222729168511	4
+bin	1.4445043562785	4
+bin	1.666735795706	7
+bin	1.8889672351335	5
+bin	2.1111986745609	6
+bin	2.3334301139884	5
+bin	2.5556615534159	7
+bin	2.7778929928433	2
+bin	3.0001244322708	7
+bin	3.2223558716983	79
+bin	3.4445873111257	1
+bin	3.6668187505532	0
+bin	3.8890501899807	0
+bin	4.1112816294081	0
+bin	4.3335130688356	0
+bin	4.5557445082631	0
+bin	4.7779759476905	0
+bin	5.000207387118	0
+scalar ClusterTree.host[2].nic.ifq 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar ClusterTree.host[2].nic.ifq 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar ClusterTree.host[2].nic.ifq 	rcvdPk:count 	1142
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar ClusterTree.host[2].nic.ifq 	rcvdPk:sum(packetBytes) 	11420
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar ClusterTree.host[2].nic.mac 	"Total simulation time" 	1399.8614404086
+scalar ClusterTree.host[2].nic.mac 	"total num of upper pkts received" 	1142
+scalar ClusterTree.host[2].nic.mac 	"num of upper pkts dropped" 	848
+scalar ClusterTree.host[2].nic.mac 	"num of BEACON pkts sent" 	356
+scalar ClusterTree.host[2].nic.mac 	"num of DATA pkts sent successfully" 	274
+scalar ClusterTree.host[2].nic.mac 	"num of DATA pkts failed" 	19
+scalar ClusterTree.host[2].nic.mac 	"num of DATA pkts sent successfully in GTS" 	0
+scalar ClusterTree.host[2].nic.mac 	"num of DATA pkts failed in GTS" 	0
+scalar ClusterTree.host[2].nic.mac 	"num of ACK pkts sent" 	848
+scalar ClusterTree.host[2].nic.mac 	"num of BEACON pkts received" 	357
+scalar ClusterTree.host[2].nic.mac 	"num of BEACON pkts lost" 	0
+scalar ClusterTree.host[2].nic.mac 	"num of DATA pkts received" 	848
+scalar ClusterTree.host[2].nic.mac 	"num of DATA pkts received in GTS" 	0
+scalar ClusterTree.host[2].nic.mac 	"num of ACK pkts received" 	274
+scalar ClusterTree.host[2].nic.mac 	"num of collisions" 	46
+scalar ClusterTree.host[2].nic.phy 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar ClusterTree.host[2].nic.phy 	lossRate:max 	0.08
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar ClusterTree.host[2].nic.phy 	lossRate:timeavg 	0.031116465834245
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+scalar ClusterTree.host[2].nic.phy 	radioState:count 	14097
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+statistic ClusterTree.host[2].nic.phy 	channelNo:histogram
+field count 1
+field mean 11
+field stddev -1.#IND
+field sum 11
+field sqrsum 121
+field min 11
+field max 11
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	10	0
+bin	11	1
+bin	12	0
+scalar ClusterTree.host[2].nic.phy 	bitrate:min 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar ClusterTree.host[2].nic.phy 	bitrate:max 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar ClusterTree.host[2].nic.phy 	bitrate:timeavg 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar ClusterTree.host[3].app 	trafficSent 	261
+scalar ClusterTree.host[3].app 	"total bytes received" 	0
+scalar ClusterTree.host[3].net 	"num of pkts forwarded" 	0
+scalar ClusterTree.host[3].nic.ifq 	queueLength:max 	3
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar ClusterTree.host[3].nic.ifq 	queueLength:timeavg 	0.079953677852544
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+statistic ClusterTree.host[3].nic.ifq 	queueingTime:histogram
+field count 261
+field mean 0.42882785687596
+field stddev 0.83960366915405
+field sum 111.92407064463
+field sqrsum 231.27908287418
+field min 0
+field max 3.570286905112
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-1.48798311331	0
+bin	-1.2895853648687	0
+bin	-1.0911876164273	0
+bin	-0.892789867986	0
+bin	-0.69439211954467	0
+bin	-0.49599437110333	0
+bin	-0.297596622662	0
+bin	-0.099198874220666	185
+bin	0.099198874220667	10
+bin	0.297596622662	7
+bin	0.49599437110333	4
+bin	0.69439211954467	3
+bin	0.892789867986	6
+bin	1.0911876164273	5
+bin	1.2895853648687	2
+bin	1.48798311331	5
+bin	1.6863808617513	8
+bin	1.8847786101927	6
+bin	2.083176358634	5
+bin	2.2815741070753	2
+bin	2.4799718555167	6
+bin	2.678369603958	1
+bin	2.8767673523993	1
+bin	3.0751651008407	2
+bin	3.273562849282	1
+bin	3.4719605977233	2
+bin	3.6703583461647	0
+bin	3.868756094606	0
+bin	4.0671538430473	0
+bin	4.2655515914887	0
+bin	4.46394933993	0
+scalar ClusterTree.host[3].nic.ifq 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar ClusterTree.host[3].nic.ifq 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar ClusterTree.host[3].nic.ifq 	rcvdPk:count 	261
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar ClusterTree.host[3].nic.ifq 	rcvdPk:sum(packetBytes) 	2610
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar ClusterTree.host[3].nic.mac 	"Total simulation time" 	1399.8614404086
+scalar ClusterTree.host[3].nic.mac 	"total num of upper pkts received" 	261
+scalar ClusterTree.host[3].nic.mac 	"num of upper pkts dropped" 	0
+scalar ClusterTree.host[3].nic.mac 	"num of BEACON pkts sent" 	0
+scalar ClusterTree.host[3].nic.mac 	"num of DATA pkts sent successfully" 	260
+scalar ClusterTree.host[3].nic.mac 	"num of DATA pkts failed" 	0
+scalar ClusterTree.host[3].nic.mac 	"num of DATA pkts sent successfully in GTS" 	0
+scalar ClusterTree.host[3].nic.mac 	"num of DATA pkts failed in GTS" 	0
+scalar ClusterTree.host[3].nic.mac 	"num of ACK pkts sent" 	0
+scalar ClusterTree.host[3].nic.mac 	"num of BEACON pkts received" 	356
+scalar ClusterTree.host[3].nic.mac 	"num of BEACON pkts lost" 	0
+scalar ClusterTree.host[3].nic.mac 	"num of DATA pkts received" 	0
+scalar ClusterTree.host[3].nic.mac 	"num of DATA pkts received in GTS" 	0
+scalar ClusterTree.host[3].nic.mac 	"num of ACK pkts received" 	260
+scalar ClusterTree.host[3].nic.mac 	"num of collisions" 	0
+scalar ClusterTree.host[3].nic.phy 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar ClusterTree.host[3].nic.phy 	lossRate:max 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar ClusterTree.host[3].nic.phy 	lossRate:timeavg 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+scalar ClusterTree.host[3].nic.phy 	radioState:count 	3504
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+statistic ClusterTree.host[3].nic.phy 	channelNo:histogram
+field count 1
+field mean 11
+field stddev -1.#IND
+field sum 11
+field sqrsum 121
+field min 11
+field max 11
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	10	0
+bin	11	1
+bin	12	0
+scalar ClusterTree.host[3].nic.phy 	bitrate:min 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar ClusterTree.host[3].nic.phy 	bitrate:max 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar ClusterTree.host[3].nic.phy 	bitrate:timeavg 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar ClusterTree.host[4].app 	trafficSent 	297
+scalar ClusterTree.host[4].app 	"total bytes received" 	0
+scalar ClusterTree.host[4].net 	"num of pkts forwarded" 	0
+scalar ClusterTree.host[4].nic.ifq 	queueLength:max 	4
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar ClusterTree.host[4].nic.ifq 	queueLength:timeavg 	0.078652536531572
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+statistic ClusterTree.host[4].nic.ifq 	queueingTime:histogram
+field count 296
+field mean 0.36639508249732
+field stddev 0.77174663348879
+field sum 108.45294441921
+field sqrsum 215.43652107643
+field min 0
+field max 3.659126076678
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-1.551641572578	0
+bin	-1.3447560295676	0
+bin	-1.1378704865572	0
+bin	-0.9309849435468	0
+bin	-0.7240994005364	0
+bin	-0.517213857526	0
+bin	-0.3103283145156	0
+bin	-0.1034427715052	215
+bin	0.1034427715052	6
+bin	0.3103283145156	9
+bin	0.517213857526	12
+bin	0.7240994005364	12
+bin	0.9309849435468	4
+bin	1.1378704865572	4
+bin	1.3447560295676	4
+bin	1.551641572578	8
+bin	1.7585271155884	4
+bin	1.9654126585988	3
+bin	2.1722982016092	2
+bin	2.3791837446196	0
+bin	2.58606928763	4
+bin	2.7929548306404	2
+bin	2.9998403736508	3
+bin	3.2067259166612	1
+bin	3.4136114596716	1
+bin	3.620497002682	2
+bin	3.8273825456924	0
+bin	4.0342680887028	0
+bin	4.2411536317132	0
+bin	4.4480391747236	0
+bin	4.654924717734	0
+scalar ClusterTree.host[4].nic.ifq 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar ClusterTree.host[4].nic.ifq 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar ClusterTree.host[4].nic.ifq 	rcvdPk:count 	297
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar ClusterTree.host[4].nic.ifq 	rcvdPk:sum(packetBytes) 	2970
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar ClusterTree.host[4].nic.mac 	"Total simulation time" 	1399.8614404086
+scalar ClusterTree.host[4].nic.mac 	"total num of upper pkts received" 	296
+scalar ClusterTree.host[4].nic.mac 	"num of upper pkts dropped" 	0
+scalar ClusterTree.host[4].nic.mac 	"num of BEACON pkts sent" 	0
+scalar ClusterTree.host[4].nic.mac 	"num of DATA pkts sent successfully" 	295
+scalar ClusterTree.host[4].nic.mac 	"num of DATA pkts failed" 	0
+scalar ClusterTree.host[4].nic.mac 	"num of DATA pkts sent successfully in GTS" 	0
+scalar ClusterTree.host[4].nic.mac 	"num of DATA pkts failed in GTS" 	0
+scalar ClusterTree.host[4].nic.mac 	"num of ACK pkts sent" 	0
+scalar ClusterTree.host[4].nic.mac 	"num of BEACON pkts received" 	356
+scalar ClusterTree.host[4].nic.mac 	"num of BEACON pkts lost" 	0
+scalar ClusterTree.host[4].nic.mac 	"num of DATA pkts received" 	0
+scalar ClusterTree.host[4].nic.mac 	"num of DATA pkts received in GTS" 	0
+scalar ClusterTree.host[4].nic.mac 	"num of ACK pkts received" 	295
+scalar ClusterTree.host[4].nic.mac 	"num of collisions" 	11
+scalar ClusterTree.host[4].nic.phy 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar ClusterTree.host[4].nic.phy 	lossRate:max 	0.06
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar ClusterTree.host[4].nic.phy 	lossRate:timeavg 	0.014673026436919
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+scalar ClusterTree.host[4].nic.phy 	radioState:count 	6228
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+statistic ClusterTree.host[4].nic.phy 	channelNo:histogram
+field count 1
+field mean 11
+field stddev -1.#IND
+field sum 11
+field sqrsum 121
+field min 11
+field max 11
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	10	0
+bin	11	1
+bin	12	0
+scalar ClusterTree.host[4].nic.phy 	bitrate:min 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar ClusterTree.host[4].nic.phy 	bitrate:max 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar ClusterTree.host[4].nic.phy 	bitrate:timeavg 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar ClusterTree.host[5].app 	trafficSent 	266
+scalar ClusterTree.host[5].app 	"total bytes received" 	0
+scalar ClusterTree.host[5].net 	"num of pkts forwarded" 	0
+scalar ClusterTree.host[5].nic.ifq 	queueLength:max 	3
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar ClusterTree.host[5].nic.ifq 	queueLength:timeavg 	0.058397184619802
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+statistic ClusterTree.host[5].nic.ifq 	queueingTime:histogram
+field count 266
+field mean 0.30732318412662
+field stddev 0.74988412871495
+field sum 81.747966977682
+field sqrsum 174.13949022958
+field min 0
+field max 3.407822493212
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-1.2463651114585	0
+bin	-1.0801830965974	0
+bin	-0.91400108173623	0
+bin	-0.7478190668751	0
+bin	-0.58163705201397	0
+bin	-0.41545503715283	0
+bin	-0.2492730222917	0
+bin	-0.083091007430567	209
+bin	0.083091007430567	4
+bin	0.2492730222917	6
+bin	0.41545503715283	4
+bin	0.58163705201397	5
+bin	0.7478190668751	2
+bin	0.91400108173623	5
+bin	1.0801830965974	5
+bin	1.2463651114585	3
+bin	1.4125471263196	2
+bin	1.5787291411808	0
+bin	1.7449111560419	0
+bin	1.911093170903	4
+bin	2.0772751857642	1
+bin	2.2434572006253	5
+bin	2.4096392154864	1
+bin	2.5758212303476	0
+bin	2.7420032452087	3
+bin	2.9081852600698	1
+bin	3.074367274931	4
+bin	3.2405492897921	1
+bin	3.4067313046532	1
+bin	3.5729133195144	0
+bin	3.7390953343755	0
+scalar ClusterTree.host[5].nic.ifq 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar ClusterTree.host[5].nic.ifq 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar ClusterTree.host[5].nic.ifq 	rcvdPk:count 	266
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar ClusterTree.host[5].nic.ifq 	rcvdPk:sum(packetBytes) 	2660
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar ClusterTree.host[5].nic.mac 	"Total simulation time" 	1399.8614404086
+scalar ClusterTree.host[5].nic.mac 	"total num of upper pkts received" 	266
+scalar ClusterTree.host[5].nic.mac 	"num of upper pkts dropped" 	0
+scalar ClusterTree.host[5].nic.mac 	"num of BEACON pkts sent" 	0
+scalar ClusterTree.host[5].nic.mac 	"num of DATA pkts sent successfully" 	266
+scalar ClusterTree.host[5].nic.mac 	"num of DATA pkts failed" 	0
+scalar ClusterTree.host[5].nic.mac 	"num of DATA pkts sent successfully in GTS" 	0
+scalar ClusterTree.host[5].nic.mac 	"num of DATA pkts failed in GTS" 	0
+scalar ClusterTree.host[5].nic.mac 	"num of ACK pkts sent" 	0
+scalar ClusterTree.host[5].nic.mac 	"num of BEACON pkts received" 	356
+scalar ClusterTree.host[5].nic.mac 	"num of BEACON pkts lost" 	0
+scalar ClusterTree.host[5].nic.mac 	"num of DATA pkts received" 	0
+scalar ClusterTree.host[5].nic.mac 	"num of DATA pkts received in GTS" 	0
+scalar ClusterTree.host[5].nic.mac 	"num of ACK pkts received" 	266
+scalar ClusterTree.host[5].nic.mac 	"num of collisions" 	0
+scalar ClusterTree.host[5].nic.phy 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar ClusterTree.host[5].nic.phy 	lossRate:max 	0.04
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar ClusterTree.host[5].nic.phy 	lossRate:timeavg 	0.0054464380948396
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+scalar ClusterTree.host[5].nic.phy 	radioState:count 	6088
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+statistic ClusterTree.host[5].nic.phy 	channelNo:histogram
+field count 1
+field mean 11
+field stddev -1.#IND
+field sum 11
+field sqrsum 121
+field min 11
+field max 11
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	10	0
+bin	11	1
+bin	12	0
+scalar ClusterTree.host[5].nic.phy 	bitrate:min 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar ClusterTree.host[5].nic.phy 	bitrate:max 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar ClusterTree.host[5].nic.phy 	bitrate:timeavg 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar ClusterTree.host[6].app 	trafficSent 	287
+scalar ClusterTree.host[6].app 	"total bytes received" 	0
+scalar ClusterTree.host[6].net 	"num of pkts forwarded" 	0
+scalar ClusterTree.host[6].nic.ifq 	queueLength:max 	4
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar ClusterTree.host[6].nic.ifq 	queueLength:timeavg 	0.083232085840673
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+statistic ClusterTree.host[6].nic.ifq 	queueingTime:histogram
+field count 287
+field mean 0.40596999154403
+field stddev 0.74921344244294
+field sum 116.51338757314
+field sqrsum 207.83868271627
+field min 0
+field max 3.436086180408
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-1.4716903033835	0
+bin	-1.275464929599	0
+bin	-1.0792395558146	0
+bin	-0.8830141820301	0
+bin	-0.68678880824563	0
+bin	-0.49056343446117	0
+bin	-0.2943380606767	0
+bin	-0.098112686892233	200
+bin	0.098112686892233	7
+bin	0.2943380606767	7
+bin	0.49056343446117	4
+bin	0.68678880824563	9
+bin	0.8830141820301	9
+bin	1.0792395558146	5
+bin	1.275464929599	9
+bin	1.4716903033835	14
+bin	1.667915677168	7
+bin	1.8641410509524	2
+bin	2.0603664247369	2
+bin	2.2565917985214	3
+bin	2.4528171723058	2
+bin	2.6490425460903	1
+bin	2.8452679198748	4
+bin	3.0414932936592	1
+bin	3.2377186674437	0
+bin	3.4339440412282	1
+bin	3.6301694150126	0
+bin	3.8263947887971	0
+bin	4.0226201625816	0
+bin	4.218845536366	0
+bin	4.4150709101505	0
+scalar ClusterTree.host[6].nic.ifq 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar ClusterTree.host[6].nic.ifq 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar ClusterTree.host[6].nic.ifq 	rcvdPk:count 	287
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar ClusterTree.host[6].nic.ifq 	rcvdPk:sum(packetBytes) 	2870
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar ClusterTree.host[6].nic.mac 	"Total simulation time" 	1399.8614404086
+scalar ClusterTree.host[6].nic.mac 	"total num of upper pkts received" 	287
+scalar ClusterTree.host[6].nic.mac 	"num of upper pkts dropped" 	0
+scalar ClusterTree.host[6].nic.mac 	"num of BEACON pkts sent" 	0
+scalar ClusterTree.host[6].nic.mac 	"num of DATA pkts sent successfully" 	287
+scalar ClusterTree.host[6].nic.mac 	"num of DATA pkts failed" 	0
+scalar ClusterTree.host[6].nic.mac 	"num of DATA pkts sent successfully in GTS" 	0
+scalar ClusterTree.host[6].nic.mac 	"num of DATA pkts failed in GTS" 	0
+scalar ClusterTree.host[6].nic.mac 	"num of ACK pkts sent" 	0
+scalar ClusterTree.host[6].nic.mac 	"num of BEACON pkts received" 	356
+scalar ClusterTree.host[6].nic.mac 	"num of BEACON pkts lost" 	0
+scalar ClusterTree.host[6].nic.mac 	"num of DATA pkts received" 	0
+scalar ClusterTree.host[6].nic.mac 	"num of DATA pkts received in GTS" 	0
+scalar ClusterTree.host[6].nic.mac 	"num of ACK pkts received" 	287
+scalar ClusterTree.host[6].nic.mac 	"num of collisions" 	0
+scalar ClusterTree.host[6].nic.phy 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar ClusterTree.host[6].nic.phy 	lossRate:max 	0.04
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar ClusterTree.host[6].nic.phy 	lossRate:timeavg 	0.0083181690554441
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+scalar ClusterTree.host[6].nic.phy 	radioState:count 	6176
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+statistic ClusterTree.host[6].nic.phy 	channelNo:histogram
+field count 1
+field mean 11
+field stddev -1.#IND
+field sum 11
+field sqrsum 121
+field min 11
+field max 11
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	10	0
+bin	11	1
+bin	12	0
+scalar ClusterTree.host[6].nic.phy 	bitrate:min 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar ClusterTree.host[6].nic.phy 	bitrate:max 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar ClusterTree.host[6].nic.phy 	bitrate:timeavg 	250000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
